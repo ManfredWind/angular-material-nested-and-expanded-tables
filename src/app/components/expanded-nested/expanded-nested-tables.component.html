@@ -1,0 +1,38 @@
+<ng-container *ngIf="courses && courses.length > 0">
+
+<h3>Courses: <span>({{courses.length}})</span></h3>
+
+  <div class="nested-tables-container" *ngFor="let dataSource of dataSources; let i = index">
+
+    <mat-table class="courses-table" [dataSource]="dataSource">
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Course Name </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="deliveryMethod">
+        <mat-header-cell *matHeaderCellDef> Delivery Method </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.deliveryMethod}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="price">
+        <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.price}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="teachers">
+        <mat-header-cell *matHeaderCellDef> Teachers </mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <teachers [displayHeading]="false" [teachers]="dataSource.data[0].teachers"></teachers>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+
+
+  </div>
+
+</ng-container>

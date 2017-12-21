@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+.center {
+  text-align: center;
+}
+
+.nested-tables-container {
+  margin-bottom:5em;
+}
+
+.courses-table mat-row {
+  background-color: gray;
+}
+
+.courses-table mat-cell{
+  color:#fff;
+}
+
+.teachers-table mat-header-row, .teachers-table mat-row {
+  padding: 5px;
+}

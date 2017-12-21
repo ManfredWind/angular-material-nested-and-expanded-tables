@@ -1,0 +1,25 @@
+<ng-container *ngIf="teachers && teachers.length > 0">
+
+  <h4 *ngIf="displayHeading" class="center">Teachers:</h4>
+
+  <mat-table class="teachers-table" [dataSource]="dataSource">
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="language">
+      <mat-header-cell *matHeaderCellDef> Language </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.language}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="availability">
+      <mat-header-cell *matHeaderCellDef> availability </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.availability}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+</ng-container>

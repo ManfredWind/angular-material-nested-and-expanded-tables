@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Course } from './model/course';
+import { Teacher } from './model/teacher';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  courses : Course[];
+
+  constructor() {
+    this.courses = require('../assets/courses.json');
+  }
+
 }

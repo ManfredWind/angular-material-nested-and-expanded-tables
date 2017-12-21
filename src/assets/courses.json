@@ -1,0 +1,9 @@
+[{"name":"Data Structures & Algorithms","deliveryMethod":"Live classroom","price":"$500",
+"teachers":[{"name":"Linus Torvalds","language":"Finnish","availability":"8am - 12pm"},
+{"name":"Bjarne Stroustrup","language":"Danish","availability":"1pm - 5pm"}]},
+{"name":"Angular Front-end development","deliveryMethod":"Virtual classroom","price":"$200",
+"teachers":[{"name":"Manfred Steyer","language":"German","availability":"8am - 12pm"},
+{"name":"Manfred Wind","language":"English","availability":"1pm - 5pm"}]},
+{"name":"Java Back-End development with Spring","deliveryMethod":"Self-paced","price":"$60",
+"teachers":[{"name":"Richard Chesterwood","language":"English","availability":"----"},
+{"name":"Rod Johnson","language":"English","availability":"----"}]}]
