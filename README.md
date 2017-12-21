@@ -32,16 +32,16 @@ Peek:
 
 - Simple table: 
 
-![Alt text](simple.png?raw=true "Simple Table Angular 5 Material")
+![Alt text](simple-table.png?raw=true "Simple Table Angular 5 Material")
 
 - Simple-Nested table: 
 
-![Alt text](simple-nested.png?raw=true "Simple-Nested Table Angular 5 Material")
+![Alt text](simple-nested-table.png?raw=true "Simple-Nested Table Angular 5 Material")
 
 - Expanded-Nested table: 
 
-![Alt text](expanded-nested.png?raw=true "Expanded-Nested Table Angular 5 Material")
+![Alt text](expanded-nested-table.png?raw=true "Expanded-Nested Table Angular 5 Material")
 
 - Fully-Nested table: 
 
-![Alt text](fully-expanded.png?raw=true "Fully-Nested Table Angular 5 Material")
+![Alt text](fully-expanded-table.png?raw=true "Fully-Nested Table Angular 5 Material")
