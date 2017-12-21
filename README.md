@@ -42,6 +42,6 @@ Peek:
 
 ![Alt text](expanded-nested-table.png?raw=true "Expanded-Nested Table Angular 5 Material")
 
-- Fully-Nested table: 
+- Fully-Expanded table: 
 
 ![Alt text](fully-expanded-table.png?raw=true "Fully-Nested Table Angular 5 Material")
