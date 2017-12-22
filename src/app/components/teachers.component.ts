@@ -15,7 +15,14 @@ export class TeachersComponent implements OnInit {
   dataSource : MatTableDataSource<Teacher>;
 
   ngOnInit() {
-    this.dataSource = new MatTableDataSource(this.teachers);
+    if (this.areTeachersValid(this.teachers)) {
+      this.dataSource = new MatTableDataSource(this.teachers);
+    }
+
+  }
+
+  areTeachersValid(teachers : Teacher[]) : boolean {
+    return typeof teachers != "undefined" && teachers != null && teachers.length > 0;
   }
 
 }

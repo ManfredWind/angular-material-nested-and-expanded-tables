@@ -1,4 +1,4 @@
-<ng-container *ngIf="courses && courses.length > 0">
+<ng-container *ngIf="areCoursesValid(courses)">
 
 <h3>Courses: <span>({{courses.length}})</span></h3>
 
@@ -30,8 +30,6 @@
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
       <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
     </mat-table>
-
-
 
   </div>
 

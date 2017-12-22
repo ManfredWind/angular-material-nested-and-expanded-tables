@@ -1,4 +1,4 @@
-<ng-container *ngIf="courses && courses.length > 0">
+<ng-container *ngIf="areCoursesValid(courses)">
 
 <h3>Courses: <span>({{courses.length}})</span></h3>
   <div class="nested-tables-container">

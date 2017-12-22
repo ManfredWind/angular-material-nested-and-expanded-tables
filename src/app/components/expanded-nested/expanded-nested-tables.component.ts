@@ -14,7 +14,7 @@ export class ExpandedNestedTablesComponent implements OnInit {
   dataSources : MatTableDataSource<Course>[];
 
   ngOnInit() {
-    if (typeof this.courses != "undefined" && this.courses != null && this.courses.length > 0) {
+    if (this.areCoursesValid(this.courses)) {
       this.dataSources = new  Array<MatTableDataSource<Course>>();
       for (let course of this.courses) {
         this.setDataSources(course);
@@ -27,6 +27,10 @@ export class ExpandedNestedTablesComponent implements OnInit {
     let courses = new Array<Course>();
     courses.push(course);
     this.dataSources.push(new MatTableDataSource(courses));
+  }
+
+  areCoursesValid(courses : Course[]) : boolean {
+    return typeof courses != "undefined" && courses != null && courses.length > 0;
   }
 
 }

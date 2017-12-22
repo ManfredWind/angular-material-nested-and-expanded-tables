@@ -14,7 +14,13 @@ export class SimpleNestedTablesComponent implements OnInit {
   dataSource : MatTableDataSource<Course>;
 
   ngOnInit() {
-    this.dataSource = new MatTableDataSource(this.courses);
+    if (this.areCoursesValid(this.courses)) {
+      this.dataSource = new MatTableDataSource(this.courses);
+    }
+  }
+
+  areCoursesValid(courses : Course[]) : boolean {
+    return typeof courses != "undefined" && courses != null && courses.length > 0;
   }
 
 }
